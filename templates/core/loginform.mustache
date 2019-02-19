@@ -110,11 +110,13 @@
                 <div class="col-md-5">
        {{! ENTRAR COMO USUARIO DE LA UNLP SAML}}
        {{#hasidentityproviders}}
-                    <h6 class="mt-2">{{#str}} potentialidps, auth {{/str}}</h6>
+		   <h3 class="text-center">Sos alumno?</h3>
+			<h6>Ingresa con tu usuario del sistema de Acceso Unico de la UNLP</h6>
+                    {{!<h6 class="mt-2">{{! #str }-} potentialidps, auth {{! /str}-}</h6>}}
                     <div class="potentialidplist" class="mt-3">
                         {{#identityproviders}}
                             <div class="potentialidp">
-                                <a href="{{url}}" title={{#quote}}{{name}}{{/quote}} class="btn btn-secondary btn-block">
+                                <a href="{{url}}" title={{#quote}}{{name}}{{/quote}} class="btn btn-primary btn-block">
                                     {{#iconurl}}
 					<img src="{{iconurl}}" alt="" width="32" height="32"/>
 	                            {{/iconurl}}
@@ -154,7 +156,7 @@
                                 <label for="rememberusername">{{#str}} rememberusername, admin {{/str}}</label>
                             </div>
                         {{/rememberusername}}
-                        <button type="submit" class="btn btn-primary btn-block mt-3" id="loginbtn">{{#str}}login{{/str}}</button>
+                        <button type="submit" class="btn btn-success btn-block mt-3" id="loginbtn">{{#str}}login{{/str}}</button>
                     </form>
                 </div>
                 <div class="col-md-5">
