@@ -24,7 +24,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2018051401;
+$plugin->version   = 2021010100;
 $plugin->requires  = 2018050800;
 $plugin->component = 'theme_unlp';
 
